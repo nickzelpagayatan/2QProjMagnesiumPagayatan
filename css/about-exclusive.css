@@ -48,6 +48,8 @@ section {
 }
 
 .webpage-actual-content {
+    box-sizing: border-box;
+    width: 100%;
     padding: 15px;
 }
 
