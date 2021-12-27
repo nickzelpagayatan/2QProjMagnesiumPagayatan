@@ -79,6 +79,26 @@ header ul:nth-child(2) li  {
     position:absolute;	
 }
 
+.socials > ul {
+    width: 25%;
+    background-color: #F3F1EE;
+    box-sizing: border-box;
+}
+
+.socials > ul > li {
+    width: 100%;
+    margin-left: 35%;
+    margin-bottom: 25%;
+}
+
+.socials > ul >li:nth-child(1) {
+    margin-left: 0!important;
+}
+
+.socials > ul > li:nth-child(2) {
+    margin-top: 35px;        
+}
+
 .subtopics:hover ul {
     display:block;
 }
