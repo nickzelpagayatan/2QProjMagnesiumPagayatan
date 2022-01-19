@@ -27,9 +27,19 @@ header ul li  {
     float: left;
 }
 
-header > nav >  ul > li:hover  {
-    border-bottom: 2px solid black;
-    transition: all .1s ease;
+header > nav >  ul > li:after  {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+}
+
+header > nav >  ul > li:hover:after {
+    width: 100%;
+    transition: 0.3s;
 }
 
 header ul:nth-child(2) li  {
