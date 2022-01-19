@@ -25,6 +25,7 @@ header img {
 
 header ul li  {
     float: left;
+    width: fit-content;
 }
 
 #primaryNavigationLeft a:after  {
