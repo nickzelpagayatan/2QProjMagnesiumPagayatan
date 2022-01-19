@@ -27,17 +27,17 @@ header ul li  {
     float: left;
 }
 
-.primaryNavigationLeft a:after  {
+#primaryNavigationLeft a:after  {
     content: "";
     position: absolute;
     background-color: black;
-    height: 3px;
+    height: 2px;
     width: 0;
     left: 0;
     bottom: -10px;
 }
 
-.primaryNavigationLeft a:hover:after {
+#primaryNavigationLeft a:hover:after {
     width: 100%;
     transition: 0.3s;
 }
