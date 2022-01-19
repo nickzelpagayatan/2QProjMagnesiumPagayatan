@@ -27,7 +27,7 @@ header ul li  {
     float: left;
 }
 
-header > nav >  ul > li:after  {
+.primaryNavigationLeft:after  {
     content: "";
     position: absolute;
     background-color: black;
@@ -37,7 +37,7 @@ header > nav >  ul > li:after  {
     bottom: -10px;
 }
 
-header > nav >  ul > li:hover:after {
+.primaryNavigationLeft:hover:after {
     width: 100%;
     transition: 0.3s;
 }
