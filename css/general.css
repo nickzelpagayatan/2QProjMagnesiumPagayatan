@@ -117,7 +117,84 @@ header ul:nth-child(2) li  {
     left: 70%;
 }
 
+/*Hamburger*/
+.checkbtn {
+    position: absolute;
+    float: left;
+    bottom: 25px;
+    margin-left: 20px;
+    font-size: 20px;
+    color: black;
+}
+
+.cross {
+    position: absolute;
+    float: left;
+    bottom: 25px;
+    margin-left: 20px;
+    font-size: 20px;
+    color: black;
+    display:none;
+}
+
+#hamburger ul {
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 85px;
+    left: -100%;
+    padding-top: 40px;
+    padding-right: 30px;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+#hamburger ul li {
+    display: block;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+#hamburger ul > li:nth-child(12) {
+    padding-bottom: 100px!important;
+    width: 95%;
+}
+
+#hamburger ul hr {
+    margin: 10px 30px 20px 30px;
+}
+
+#hamburger ul li .facebook, #hamburger ul li .twitter, #hamburger ul li .instagram, #hamburger ul li .gmail {
+    
+    zoom: 0.05;
+}
+
+#check:checked~ul{
+    left: 0;
+}
+
+#check:checked~.checkbtn {
+    transform: scale(0);
+    transition: 0.3s ease;
+}
+
+#check:checked~.cross {
+    display: block;
+}
+
+#check {
+    display: none;
+}
+
 /*Responsive nav*/
+@media screen and (min-width: 420px) {
+    .checkbtn {
+        bottom: 24px;
+    }
+}
+
 @media screen and (max-width: 420px) {
     header img {
         width: 60%;
@@ -127,6 +204,16 @@ header ul:nth-child(2) li  {
 @media screen and (max-width: 830px) {
     #primaryNavigationLeft , #primaryNavigationRight
     {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 831px) {
+    .checkbtn, .cross {
+        display: none!important;
+    }
+
+    #hamburger ul, #hamburger ul li {
         display: none;
     }
 }
