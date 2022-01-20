@@ -25,22 +25,10 @@ header img {
 
 header ul li  {
     float: left;
-    width: fit-content;
 }
 
-#primaryNavigationLeft a:after  {
-    content: "";
-    position: absolute;
-    background-color: black;
-    height: 2px;
-    width: 0;
-    left: 0;
-    bottom: -10px;
-}
-
-#primaryNavigationLeft a:hover:after {
-    width: 100%;
-    transition: 0.3s;
+header a:hover {
+    color: #666666;
 }
 
 header ul:nth-child(2) li  {
@@ -112,12 +100,10 @@ header ul:nth-child(2) li  {
 
 .subtopics:hover ul {
     display:block;
-    transition: all .4s ease;
 }
 
 .socials:hover ul {
     display:block;
-    transition: all .4s ease;
 }
 
 #primaryNavigationLeft {
